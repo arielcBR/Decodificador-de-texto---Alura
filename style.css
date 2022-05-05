@@ -33,17 +33,16 @@ header img {
 ::-webkit-input-placeholder {
     color: #0A3871;
     font-size: 22px;
-}
-
+}   
 .mensagem {
-    position: relative;
-    width: 400px;
-    height: 100%;
-    margin-top: 10px;
+
+    height: 80vh;
+    margin-top: -40px;
     margin-left: 90px;
     background-image: url(img/menino.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 260px 240px;
     border-radius: 16px;
     box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.1);
 }
@@ -55,8 +54,8 @@ header img {
 }
 
 .btn {
-    width: 328px;
-    height: 60px;
+    width: 280px;
+    height: 50px;
     font-size: 16px;
     border-radius: 12px;
 }
