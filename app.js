@@ -64,9 +64,11 @@ btn_descriptografar.addEventListener('click', btnDesencriptar);
 btn_copy_input.addEventListener('click', () => {
     let copiaTexto = txtInput.value;
     navigator.clipboard.writeText(copiaTexto);
+    alert("Texto inserido copiado!");
 })
 
 btn_copy_output.addEventListener('click', () => {
     let copiaTexto = txtOutput.textContent;
     navigator.clipboard.writeText(copiaTexto);
+    alert("Texto traduzido copiado!");
 })
