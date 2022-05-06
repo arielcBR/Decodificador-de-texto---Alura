@@ -9,6 +9,10 @@
     <!-- Fontes externas -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -19,7 +23,13 @@
 
     <main class="main">
         <section>
-            <textarea class="input-texto" id="textInput" cols="40" rows="6" placeholder="Digite seu texto"></textarea>
+            <div class="container">
+                <div class="copy-text">
+                    <textarea class="input-texto" id="textInput" cols="40" rows="6" placeholder="Digite seu texto"></textarea>
+                    <button class="btn_copy"><i class="fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+                    
             <div>
                 <div class="aviso">
                     <h6><img src="img/Vector.png" alt="Simbolo de exclamação">Apenas letras minúsculas e sem acento.</h6>
@@ -41,5 +51,8 @@
     </main>
     
     <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,10 +21,14 @@ header img {
     margin-bottom: 50px;
 }
 
+.container {
+    margin-bottom: 130px;
+}
+
 .input-texto {
     height: 150px;
     margin-top: 30px;
-    margin-bottom: 150px;
+    padding: 10px;
     color: #0A3871;
     background-color: #F3F5FC;
     border: none;
@@ -38,7 +43,8 @@ header img {
     height: 80vh;
     text-align: center;
     margin-top: -40px;
-    margin-left: 90px;
+    margin-left: 80px;
+    padding: 10px;
     border-radius: 16px;
     box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.1);
 }
@@ -75,6 +81,11 @@ header img {
     color: #0A3871;
     border: 1px solid #0A3871;
     margin-left: 15px;
+}
+
+.btn_copy {
+    width: 50px;
+    height: 50px;
 }
 
 .aviso img{
