@@ -41,21 +41,38 @@ header img {
     font-size: 22px;
 }   
 .mensagem {
+    width: 330px;
     height: 77vh;
     text-align: center;
-    margin-top: -65px;
-    margin-left: 80px;
-    padding: 10px;
+    margin: -65px 0 0 80px;
+    padding: 15px;
+    background-color: #FFF;
     border-radius: 16px;
     box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.1);
 }
 
-.bg-img {
+.esconde {
+    display: none;
+}
+
+.exibe {
     display: block;
-    background-image: url(img/menino.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 260px 240px;
+}
+
+.infoImg {
+     width: 260px;
+     height: 240px;
+}
+
+.msgPrimaria {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A3871;
+}
+
+.msgSecundaria {
+    font-size: 12px;
+    color: #0A3871;
 }
 
 .botoes {
