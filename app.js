@@ -7,10 +7,12 @@ const txtOutput = document.querySelector("#msgTraduzida");
 
 function btnEncriptar() {
     const textoRecebido = txtInput.value;
-    var textoEncriptado = encriptar(textoRecebido);
-    escondeInfo();
-    mostraBotaoCopy();
-    txtOutput.textContent = textoEncriptado;
+    if (textoRecebido != "") {
+        var textoEncriptado = encriptar(textoRecebido);
+        escondeInfo();
+        mostraBotaoCopy();
+        txtOutput.textContent = textoEncriptado;
+    }
 }
 
 function encriptar(texto) {
@@ -28,10 +30,13 @@ function encriptar(texto) {
 
 function btnDesencriptar() {
     const textoRecebido = txtInput.value;
-    var textoDesencriptado = desencriptar(textoRecebido);
-    escondeInfo();
-    mostraBotaoCopy();
-    txtOutput.textContent = textoDesencriptado;
+    if (textoRecebido != "") {
+        var textoDesencriptado = desencriptar(textoRecebido);
+        escondeInfo();
+        mostraBotaoCopy();
+        txtOutput.textContent = textoDesencriptado;
+    }
+    
 }
 
 function desencriptar(texto) {
