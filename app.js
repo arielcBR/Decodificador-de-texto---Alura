@@ -1,5 +1,6 @@
 const btn_criptografar    = document.getElementById("botao_criptografar");
 const btn_descriptografar = document.getElementById("botao_descriptografar");
+const btn_copy            = document.getElementById("btn-copy");
 const txtInput            = document.querySelector(".input-texto");
 const txtOutput           = document.querySelector(".mensagem");
 var   textArea            = document.getElementById("textOutput");
@@ -13,7 +14,7 @@ function btnEncriptar() {
 
 function encriptar(texto) {
     let matrizCodigo = [["e", "enter"], ["o", "ober"], ["i", "imes"], ["a", "ai"], ["u", "ufat"]];
-    texto = texto.toLowerCase(); // Transforma texto em minusculo
+    texto = texto.toLowerCase(); 
 
     for (let i = 0; i < matrizCodigo.length; i++) {
         if (texto.includes(matrizCodigo[i][0])) {
@@ -49,7 +50,12 @@ function exibicaoImg(texto) {
 }
 
 btn_criptografar.addEventListener('click', btnEncriptar);
+
 btn_descriptografar.addEventListener('click', btnDesencriptar);
 
+btn_copy.addEventListener('click', () => {
+    txtInput.select();
+    document.execCommand("Copy");
+})
 
 

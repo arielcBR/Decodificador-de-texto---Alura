@@ -26,6 +26,7 @@ header img {
 }
 
 .input-texto {
+    width: 650px;
     height: 150px;
     margin-top: 30px;
     padding: 10px;
@@ -40,9 +41,9 @@ header img {
     font-size: 22px;
 }   
 .mensagem {
-    height: 80vh;
+    height: 77vh;
     text-align: center;
-    margin-top: -40px;
+    margin-top: -60px;
     margin-left: 80px;
     padding: 10px;
     border-radius: 16px;
@@ -83,9 +84,28 @@ header img {
     margin-left: 15px;
 }
 
-.btn_copy {
+.btn_copy_input {
     width: 50px;
     height: 50px;
+    border: none;
+    background-color: #F3F5FC;
+}
+
+.btn_copy_output {
+    margin-top: 10px;
+    margin-left: 140px;
+    background-color: #0A3871;
+    color: #F3F5FC;
+    border: none;
+}
+
+.copy_input {
+    margin-left: 600px;
+}
+
+.copy_output {
+    width: 300px;
+    height: 40px;
 }
 
 .aviso img{
