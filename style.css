@@ -43,7 +43,7 @@ header img {
 .mensagem {
     height: 77vh;
     text-align: center;
-    margin-top: -60px;
+    margin-top: -65px;
     margin-left: 80px;
     padding: 10px;
     border-radius: 16px;
@@ -54,7 +54,7 @@ header img {
     display: block;
     background-image: url(img/menino.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size: 260px 240px;
 }
 
@@ -92,11 +92,15 @@ header img {
 }
 
 .btn_copy_output {
+    width: 50px;
+    height: 60px;
+    font-size: 13px;
     margin-top: 10px;
-    margin-left: 140px;
+    margin-left: 80px;
     background-color: #0A3871;
     color: #F3F5FC;
     border: none;
+    border-radius: 8px;
 }
 
 .copy_input {

@@ -1,9 +1,9 @@
 const btn_criptografar    = document.getElementById("botao_criptografar");
 const btn_descriptografar = document.getElementById("botao_descriptografar");
-const btn_copy            = document.getElementById("btn-copy");
-const txtInput            = document.querySelector(".input-texto");
-const txtOutput           = document.querySelector(".mensagem");
-var   textArea            = document.getElementById("textOutput");
+const btn_copy_input      = document.getElementById("btn-copy_input");
+const btn_copy_output     = document.getElementById("btn-copy_output");
+const txtInput            = document.querySelector("#textInput");
+const txtOutput           = document.querySelector("#textOutput");
 
 function btnEncriptar() {
     const textoRecebido = txtInput.value;
@@ -45,7 +45,8 @@ function desencriptar(texto) {
     return texto;
 }
 
-function exibicaoImg(texto) {
+function exibicaoImg() {
+    let textArea = document.getElementById("textOutput");
     textArea.classList.remove("bg-img");
 }
 
@@ -53,8 +54,13 @@ btn_criptografar.addEventListener('click', btnEncriptar);
 
 btn_descriptografar.addEventListener('click', btnDesencriptar);
 
-btn_copy.addEventListener('click', () => {
+btn_copy_input.addEventListener('click', () => {
     txtInput.select();
+    document.execCommand("Copy");
+})
+
+btn_copy_output.addEventListener('click', () => {
+    txtOutput.select();
     document.execCommand("Copy");
 })
 
