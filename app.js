@@ -4,6 +4,8 @@ const btn_copy_input = document.getElementById("btn-copy_input");
 const btn_copy_output = document.getElementById("btn-copy_output");
 const txtInput = document.querySelector("#textInput");
 const txtOutput = document.querySelector("#msgTraduzida");
+const containerInfo = document.getElementById("info");
+const botaoCopy = document.getElementById("btn-copy_output");
 
 function btnEncriptar() {
     const textoRecebido = txtInput.value;
@@ -12,6 +14,12 @@ function btnEncriptar() {
         escondeInfo();
         mostraBotaoCopy();
         txtOutput.textContent = textoEncriptado;
+    }
+
+    else {
+        txtOutput.textContent = null;
+        escondeBotaoCopy();
+        exibeInfo();
     }
 }
 
@@ -36,6 +44,12 @@ function btnDesencriptar() {
         mostraBotaoCopy();
         txtOutput.textContent = textoDesencriptado;
     }
+
+    else {
+        txtOutput.textContent = null;
+        escondeBotaoCopy();
+        exibeInfo();
+    }
     
 }
 
@@ -53,24 +67,24 @@ function desencriptar(texto) {
 }
 
 function escondeInfo() {
-    let containerInfo = document.getElementById("info");
     containerInfo.classList.add("esconde");
 }
 
+function exibeInfo() {
+    containerInfo.classList.remove("esconde");
+}
+
 function mostraBotaoCopy() {
-    let botaoCopy = document.getElementById("btn-copy_output");
     botaoCopy.classList.add("exibe");
+}
+
+function escondeBotaoCopy() {
+    botaoCopy.classList.remove("exibe");
 }
 
 btn_criptografar.addEventListener('click', btnEncriptar);
 
 btn_descriptografar.addEventListener('click', btnDesencriptar);
-
-btn_copy_input.addEventListener('click', () => {
-    let copiaTexto = txtInput.value;
-    navigator.clipboard.writeText(copiaTexto);
-    alert("Texto inserido copiado!");
-})
 
 btn_copy_output.addEventListener('click', () => {
     let copiaTexto = txtOutput.textContent;
